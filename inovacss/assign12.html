@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overlay</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            background-image: url(../assets/backbanner.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        #overlay {
+            background-color: rgba(16, 99, 67, 0.649);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+
+        #num {
+            font-size: 80px;
+
+
+        }
+
+        h1,
+        h2,
+        h4,
+        li {
+            color: rgb(0, 1, 2);
+            font-size: 30px;
+        }
+
+        #div1 {
+            margin-top: 100px;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #time {
+            border: 2px solid whitesmoke;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            width: 650px;
+        }
+
+        .min {
+            margin-left: 10px;
+        }
+
+        button,
+        input {
+            border-radius: 30px;
+            font-size: 35px;
+            margin-top: 20px;
+            background: transparent;
+        }
+
+        #cmgsoon {
+            font-size: 60px;
+        }
+
+        #mail {
+            margin-top: 40px;
+            background: transparent;
+        }
+
+        #nty {
+            background-color: blue;
+            color: rgb(12, 9, 9);
+        }
+
+        #nty:hover {
+            background-color: rgb(0, 255, 110);
+            transition-delay: 0.5s;
+
+        }
+
+        i {
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="overlay">
+        <div class="div1" id="div1">
+            <i class="fa-solid fa-gift" font-size="100px"></i>
+            <h1 id="cmgsoon">Comming Soon</h1>
+            <h2>our website is under construction,follow us for update now!</h2>
+            <div class="time" id="time">
+                <div class="min" id=" days">
+                    <h1 id="num">35 :</h1>
+                    <h4>Days</h4>
+                </div>
+
+                <div class="min" id="hours">
+                    <h1 id="num">17 :</h1>
+                    <h4>Hours</h4>
+                </div>
+
+                <div class="min" id="minutes">
+                    <h1 id="num">59 :</h1>
+                    <h4>Minutes</h4>
+                </div>
+
+                <div class="min" id="seconds">
+                    <h1 id="num">12 </h1>
+                    <h4>seconds</h4>
+                </div>
+
+            </div>
+            <div class="mail" id="mail">
+                <label for="email">
+                    <input type="text" placeholder="Email Address">
+                </label>
+
+                <button id="nty">Notity Me</button>
+
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

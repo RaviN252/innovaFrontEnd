@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            gap: 5px;
+            text-align: center;
+            font-size: 70px;
+            grid-template-rows: repeat(6, 159px);
+            grid-template-columns: repeat(4, 468px);
+            grid-template-areas: " Header  Header  Header Header"
+                "Sidebar MainContent MainContent MainContent"
+                "Sidebar MainContent MainContent MainContent"
+                "Sidebar MainContent MainContent MainContent"
+                "Sidebar ExtraContent ExtraContent ExtraContent "
+                "Footer Footer Footer Footer";
+        }
+
+        div {
+            width: 100%;
+            height: 100%;
+            color: white;
+
+
+        }
+
+
+        #Header {
+            background-color: aqua;
+            grid-area: Header;
+
+        }
+
+        #Sidebar {
+            background-color: greenyellow;
+            grid-area: Sidebar;
+
+        }
+
+        #MainContent {
+            background-color: yellow;
+            grid-area: MainContent;
+        }
+
+        #ExtraContent {
+            background-color: grey;
+            grid-area: ExtraContent;
+        }
+
+        #Footer {
+            background-color: orange;
+            grid-area: Footer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content1" id="Header">Header</div>
+        <div class="content2" id="Sidebar">Side bar</div>
+        <div class="content3" id="MainContent">Main Content</div>
+        <div class="content4" id="ExtraContent">Extra Content</div>
+        <div class="content5" id="Footer">Footer</div>
+    </div>
+</body>
+
+</html>
