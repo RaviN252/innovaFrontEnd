@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="5parallax.css">
+</head>
+
+<body>
+    <header>
+        <h2 id="logo"> Logo</h2>
+        <nav>
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">service</a>
+            <a href="">Conatct</a>
+        </nav>
+
+    </header>
+
+
+    <section class="parallax">
+
+        <img src="../images/hill1.png" alt="hill1" id="hill1">
+        <img src="../images/hill2.png" alt="hill2" id="hill2">
+        <img src="../images/hill3.png" alt="hill1" id="hill3">
+        <img src="../images/hill4.png" alt="hill1" id="hill4">
+        <img src="../images/hill5.png" alt="hill1" id="hill5">
+        <img src="../images/tree.png" alt="hill1" id="tree">
+        <h1 id="text">Parallax Website</h1>
+        <img src="../images/leaf.png" alt="hill1" id="leaf">
+        <img src="../images/plant.png" alt="hill1" id="plant">
+
+
+    </section>
+
+    <section class="sec">
+        <h1 id="h1text">Parallax scrolling</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, maiores labore repellendus laudantium
+            corrupti nobis placeat cum hic maxime aliquid ullam, impedit autem voluptatem iure? Doloremque nesciunt
+            placeat reiciendis. Aspernatur.
+            Dolor quasi consequatur laboriosam omnis iste labore necessitatibus, quae obcaecati pariatur ea? Iste
+            ducimus sapiente dolorum aliquid laboriosam molestias mollitia quia voluptates distinctio enim facilis
+            velit, fugit culpa, illo eligendi.
+            Quia culpa exercitationem, eos minima modi officiis voluptate, dolore, in cum quod obcaecati quam alias.
+            Quas eligendi minima exercitationem magni molestiae ducimus. Rem dolores quis, voluptate aliquid quasi aut
+            corrupti!
+        </p><br><br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, maiores labore repellendus laudantium
+            corrupti nobis placeat cum hic maxime aliquid ullam, impedit autem voluptatem iure? Doloremque nesciunt
+            placeat reiciendis. Aspernatur.
+            Dolor quasi consequatur laboriosam omnis iste labore necessitatibus, quae obcaecati pariatur ea? Iste
+            ducimus sapiente dolorum aliquid laboriosam molestias mollitia quia voluptates distinctio enim facilis
+            velit, fugit culpa, illo eligendi.
+            Quia culpa exercitationem, eos minima modi officiis voluptate, dolore, in cum quod obcaecati quam alias.
+            Quas eligendi minima exercitationem magni molestiae ducimus. Rem dolores quis, voluptate aliquid quasi aut
+            corrupti!
+        </p><br><br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, maiores labore repellendus laudantium
+            corrupti nobis placeat cum hic maxime aliquid ullam, impedit autem voluptatem iure? Doloremque nesciunt
+            placeat reiciendis. Aspernatur.
+            Dolor quasi consequatur laboriosam omnis iste labore necessitatibus, quae obcaecati pariatur ea? Iste
+            ducimus sapiente dolorum aliquid laboriosam molestias mollitia quia voluptates distinctio enim facilis
+            velit, fugit culpa, illo eligendi.
+            Quia culpa exercitationem, eos minima modi officiis voluptate, dolore, in cum quod obcaecati quam alias.
+            Quas eligendi minima exercitationem magni molestiae ducimus. Rem dolores quis, voluptate aliquid quasi aut
+            corrupti!
+        </p><br><br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, maiores labore repellendus laudantium
+            corrupti nobis placeat cum hic maxime aliquid ullam, impedit autem voluptatem iure? Doloremque nesciunt
+            placeat reiciendis. Aspernatur.
+            Dolor quasi consequatur laboriosam omnis iste labore necessitatibus, quae obcaecati pariatur ea? Iste
+            ducimus sapiente dolorum aliquid laboriosam molestias mollitia quia voluptates distinctio enim facilis
+            velit, fugit culpa, illo eligendi.
+            Quia culpa exercitationem, eos minima modi officiis voluptate, dolore, in cum quod obcaecati quam alias.
+            Quas eligendi minima exercitationem magni molestiae ducimus. Rem dolores quis, voluptate aliquid quasi aut
+            corrupti!
+        </p><br><br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, maiores labore repellendus laudantium
+            corrupti nobis placeat cum hic maxime aliquid ullam, impedit autem voluptatem iure? Doloremque nesciunt
+            placeat reiciendis. Aspernatur.
+            Dolor quasi consequatur laboriosam omnis iste labore necessitatibus, quae obcaecati pariatur ea? Iste
+            ducimus sapiente dolorum aliquid laboriosam molestias mollitia quia voluptates distinctio enim facilis
+            velit, fugit culpa, illo eligendi.
+            Quia culpa exercitationem, eos minima modi officiis voluptate, dolore, in cum quod obcaecati quam alias.
+            Quas eligendi minima exercitationem magni molestiae ducimus. Rem dolores quis, voluptate aliquid quasi aut
+            corrupti!
+        </p><br><br>
+    </section>
+
+
+</body>
+
+<script>
+    let text = document.getElementById("text");
+    let leaf = document.getElementById("leaf");
+    let hill1 = document.getElementById("hill1");
+    let hill4 = document.getElementById("hill4");
+    let hill5 = document.getElementById("hill5");
+
+    window.addEventListener("scroll", () => {
+        let value = window.scrollY;
+
+        text.style.marginTop = value * 2.5 + "px";
+        leaf.style.top = value * -1.5 + "px";
+        leaf.style.left = value * 1.5 + "px";
+        hill5.style.left = value * 1.5 + "px";
+        hill4.style.left = value * -1.5 + "px";
+        hill1.style.top = value * 1 + "px";
+    });
+</script>
+
+</html>
